@@ -1,7 +1,7 @@
 import Foundation
 import MapKit
 
-struct Location: Identifiable {
+struct Location {
     
     let name: String
     let cityName: String
@@ -9,12 +9,4 @@ struct Location: Identifiable {
     let description: String
     let imageNames: [String]
     let link: String
-    
-    // Identifiable
-    var id: String {
-        // name = "Colosseum"
-        // cityName = "Rome"
-        // id = "ColosseumRome"
-        name + cityName
     }
-}
